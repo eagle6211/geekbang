@@ -18,7 +18,6 @@ def get_data_from(url):
         'o':'-1'
     }
     response = requests.post(url, headers=headers, data=data)
-    print(response.text)
     data = json.loads(response.text)
     data_lst = data.get("result").get("content")
     content = ''
