@@ -1,4 +1,4 @@
-】import requests
+import requests
 import json
 import send_email
 
